@@ -16,7 +16,7 @@ windows:
     - ranger:
         - cd ~
         - clear
-        - echo -e "\nranger\n" | boxes -d peek -a c
+        - echo -e "\nranger\nDemo in kitty" | boxes -d peek -a c
     - bat:
         - clear
         - echo -e "\nbat slides.md\n" | boxes -d peek -a c

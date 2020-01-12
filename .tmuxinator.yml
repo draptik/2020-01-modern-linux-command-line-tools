@@ -1,6 +1,6 @@
 # ./.tmuxinator.yml
 
-name: cli-talk
+name: cli-demos
 root: .
 
 #tmux_options: -f .tmux-for-demo.conf

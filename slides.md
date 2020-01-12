@@ -250,36 +250,6 @@ I've come up with a set of rules that describe our reactions to technologies:
 
 ---
 
-# **ripgrep**
-
-- https://github.com/BurntSushi/ripgrep
-
-- `ripgrep` (17k stars) recursively searches directories for a regex pattern
-
-- not POSIX-conform...
-
-```text
-       \\\///
-      / _  _ \
-    (| (.)(.) |)
-.-.OOOo--()--oOOO.-.
-|                  |
-|   Power-Tool!    |
-|                  |
-'-.oooO------------'
-   (   )   Oooo.
-    \ (    (   )
-     \_)    ) /
-           (_/
-```
-
-```sh
-#rg <searchterm>
-rg /bin
-```
-
----
-
 # **byobu**
 
 - http://byobu.co/
@@ -372,6 +342,36 @@ rg /bin
 
 ---
 
+# **ripgrep**
+
+- https://github.com/BurntSushi/ripgrep
+
+- `ripgrep` (17k stars) recursively searches directories for a regex pattern
+
+- not POSIX-conform...
+
+```text
+       \\\///
+      / _  _ \
+    (| (.)(.) |)
+.-.OOOo--()--oOOO.-.
+|                  |
+|   Power-Tool!    |
+|                  |
+'-.oooO------------'
+   (   )   Oooo.
+    \ (    (   )
+     \_)    ) /
+           (_/
+```
+
+```sh
+#rg <searchterm>
+rg /bin
+```
+
+---
+
 # **fzf**
 
 - https://github.com/junegunn/fzf
@@ -414,6 +414,12 @@ rg /bin
 
 - TODO
 -->
+
+---
+
+# Combo: ripgrep, fd & fzf
+
+TODO
 
 ---
 
@@ -598,6 +604,13 @@ let foo = "bar";
 
 ---
 
+# **ndcu**
+
+- https://dev.yorhel.nl/ncdu
+- interactive `df` alternative
+
+---
+
 # **boxes**
 
 - https://boxes.thomasjensen.com/docs/
@@ -638,33 +651,29 @@ let foo = "bar";
 # END
 
 ```text
-               .-"``"-.
-              /______; \
-             {_______}\|
-             (/ a a \)(_)
-             (.-.).-.)
-  _____ooo__(    ^    )_________
- /           '-.___.-'          \
-|                                |
+              .-"""-.
+             / .===. \
+            / / a a \ \
+           / ( \___/ ) \
+  ______ooo\__\_____/__/________
+ /                              \
 | did I miss your favorite tool? |
-|                                |
- \______________________ooo_____/
-             |_  |  _|
-             \___|___/
-             {___|___}
-              |_ | _|
-              /-'Y'-\
-             (__/ \__)
+ \_____________________ooo______/
+          /           \
+         /:.:.:.:.:.:.:\
+             |  |  |
+             \==|==/
+             /-'Y'-\
+            (__/ \__)
 ```
 
 - mosh: https://mosh.org/
 - neofetch (unix porn)
 - expect https://likegeeks.com/expect-command/
-- ncdu (interactive df)
 - jq
 - httpie
 - http-prompt
 
 <!--
-echo -e "did I miss your favorite tool?" | boxes -d santa -a c
+echo -e "did I miss your favorite tool?" | boxes -d girl -a c
 -->

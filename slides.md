@@ -14,9 +14,9 @@ patat:
         right: 4
     theme:
         header: [bold]
-        emph: [vividBlue, onVividBlack, italic]
-        strong: [bold, dullMagenta, onVividBlack]
-        codeBlock: [dullRed]
+        emph: [italic]
+        strong: [bold]
+        codeBlock: [dullWhite]
     images:
         backend: 'w3m'
         path: '/usr/lib/w3m/w3mimgdisplay'

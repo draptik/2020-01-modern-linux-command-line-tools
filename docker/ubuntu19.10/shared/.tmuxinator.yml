@@ -1,0 +1,34 @@
+# ./.tmuxinator.yml
+
+name: cli-talk
+root: .
+
+#tmux_options: -f .tmux-for-demo.conf
+
+tmux_command: byobu
+
+
+windows:
+    - empty:
+        - cd ~
+        - clear
+        - echo -e "\nHallo Softwerkskammer\n" | boxes -d peek -a c
+    - ranger:
+        - cd ~
+        - clear
+        - echo -e "\nranger\n" | boxes -d peek -a c
+    - bat:
+        - clear
+        - echo -e "\nbat slides.md\n" | boxes -d peek -a c
+    - (porn) colorls:
+        - clear
+        - echo -e "\nlc\n" | boxes -d peek -a c
+    - (porn) lolcat:
+        - clear
+        - echo -e "\nla | lolcat\n" | boxes -d peek -a c
+    - (porn) no-more-secrets:
+        - clear
+        - echo -e "\nla | nms | lolcat\n" | boxes -d peek -a c
+    - christmas-tree:
+        - clear
+        - ./christmas-tree.sh

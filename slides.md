@@ -13,9 +13,10 @@ patat:
         left: 6
         right: 4
     theme:
-        header: [bold]
+        header: [bold, dullYellow]
         emph: [italic]
         strong: [bold]
+        code: [vividYellow, onRgb#101060, bold]
         codeBlock: [dullWhite]
     images:
         backend: 'w3m'
@@ -110,11 +111,7 @@ I've come up with a set of rules that describe our reactions to technologies:
 
 # Learn the basics
 
-- have knowledge of the **editor war**
-    - https://en.wikipedia.org/wiki/Editor_war
-    - (`spacemacs` http://spacemacs.org/)
-
-- `emacs` and `vim` keybindings
+- `emacs` and `vim`
     - learn navigation, copy & paste, (and how to exit :thumbsup:)
     - pick one and become fluent
 
@@ -122,32 +119,9 @@ I've come up with a set of rules that describe our reactions to technologies:
 
 ---
 
-# shells
+# terminals and shells
 
-- `bash`
-
-- `zsh`
-
-- `fish`
-
-- `dash`, and many more...
-
-**...there is no "best shell"...**
-
----
-
-# What is the difference between **terminal** and **shell**?
-
-## terminal
-  
-- **colors** (16 or more), **fonts** (utf8, ligatures, ...)
-- **interactions**
-    - keyboard shortcuts
-    - mouse interaction (copy & paste, scrolling, selection, ...)
-
-## shell
-
-- **everything else** (f.ex. **`PS1`**, scripting language)
+## What is the difference between **terminal** and **shell**?
 
 ```text
 +--------------------+
@@ -163,13 +137,26 @@ I've come up with a set of rules that describe our reactions to technologies:
 +--------------------+
 ```
 
+### terminal
+
+- **colors** (16 or more), **fonts** (utf8, ligatures, ...)
+- **interactions**
+    - keyboard shortcuts
+    - mouse interaction (copy & paste, scrolling, selection, ...)
+
+### shell
+
+- **everything else** (f.ex. **`PS1`**, scripting language)
+
 ---
 
-# What is the best terminal?
+## terminal
+
+### What is the best terminal?
 
 - use your default
 
-## Unicode, Emojis, Fonts, Image support (!)
+### Unicode, Emojis, Fonts, Image support (!)
 
 - but think about enriching your output!
 
@@ -192,71 +179,87 @@ I've come up with a set of rules that describe our reactions to technologies:
 
 ---
 
-# **fish**: The new kid on the block
+## shell
+
+- bash
+- zsh
+- fish
+- dash (embedded)
+
+---
+
+### shell / zsh
+
+- https://www.zsh.org/
+
+- package manager
+    - oh-my-zsh (99k stars) https://ohmyz.sh
+- category: shell
+
+---
+
+### shell / fish: The new kid on the block
 
 - https://fishshell.com
 
 - package manager
     - fisher (4k stars) https://github.com/jorgebucaran/fisher
     - oh-my-fish (5.5k stars) https://github.com/oh-my-fish/oh-my-fish
-
 - category: shell
 
 ---
 
-# **zsh**
-
-- https://www.zsh.org/
-
-- package manager
-    - oh-my-zsh (99k stars) https://ohmyz.sh
-
-- category: shell
-
----
-
-# **bash**
+### shell / bash
 
 - https://www.gnu.org/software/bash/
 
 - package manager
-
     - bash-it (10k stars) https://github.com/Bash-it/bash-it
     - oh-my-bash (0.5k stars) https://ohmybash.github.io
-
 - category: shell
 
 ---
 
-# PS1: **liquidprompt**
+### shell / PS1
 
-- https://github.com/nojhan/liquidprompt
+- PS1: alias for "prompt"
 
+- default: `username:/some/location $`
+
+- `$PWD` present working directory
+
+---
+
+### shell / PS1: liquidprompt
+
+- 3.9k stars https://github.com/nojhan/liquidprompt
+
+- shortens `$PWD`
+- adds git status
 - available for `zsh`, `bash`, etc
-
 - category: unix-porn
 
 ---
 
-# PS1: **Powerline**
+### shell / PS1: Powerline
 
-- https://github.com/powerline/powerline
+- 11k stars https://github.com/powerline/powerline
 
 - started as fancy statusline for `vim`...
-
+- shortens `$PWD`
+- adds git status
 - available for `zsh`, `bash`, etc
-
 - category: unix-porn
 
 ---
 
-# **byobu**
+# byobu
 
-- http://byobu.co/
+- (mirrored repo: ~500 stars) http://byobu.co/
 
 - `tmux`-wrapper for non-vim users
 
-    - `tmux` https://github.com/tmux/tmux/wiki
+    - `tmux` (16k stars) https://github.com/tmux/tmux/wiki
 
 - Keybindings `F1` - `F12`
 
@@ -281,24 +284,21 @@ I've come up with a set of rules that describe our reactions to technologies:
 
 ---
 
-# **ranger**
+# ranger
 
-- https://ranger.github.io
+- 6.9k stars https://ranger.github.io
 
 - file explorer
-
 - 2 layout options
-    - miller columns
+    - miller columns ("mac" style)
     - multipane (similar to Midnight commander)
 - powerful preview mode and program launcher (word, music, ...)
-    - with image support for certain terminals
-        - `iterms2`
-        - `urxvt`
-        - `kitty`
-        - not `gnome-terminal` (!)
-- key bindings: see `~/.config/ranger/rc.conf` starting at line 300...
-
+    - with image support for certain terminals (`iterms2`, `urxvt`, `kitty`) not `gnome-terminal` (!)
+- key bindings: see `~/.config/ranger/rc.conf` starting at line ~300...
 - category: navigation, file system
+- Demos:
+    - kitty with image preview
+    - copy `yy` & paste `pp`
 
 <!--
     Demo
@@ -313,16 +313,15 @@ I've come up with a set of rules that describe our reactions to technologies:
 
 ---
 
-# **bat**
+# bat
 
-- https://github.com/sharkdp/bat
+- 17k stars https://github.com/sharkdp/bat
 
 - `cat` & `less` with syntax highlighting
 
-- From the docs:
-
     _bat looks good on a dark background by default. However, if your terminal uses a light background, some themes like GitHub or OneHalfLight will work better for you._
 
+- hint: not the same preview used by `ranger`...
 - category: read / file display
 
 ```text
@@ -342,13 +341,15 @@ I've come up with a set of rules that describe our reactions to technologies:
 
 ---
 
-# **ripgrep**
+# ripgrep
 
-- https://github.com/BurntSushi/ripgrep
+- 17k stars https://github.com/BurntSushi/ripgrep
 
-- `ripgrep` (17k stars) recursively searches directories for a regex pattern
-
-- not POSIX-conform...
+- `ripgrep` recursively searches directories for a regex pattern
+- very fast `grep` replacement (benchmarks on website)
+- sensible defaults: respect `.gitignore`, ignores hidden files & folders
+- command: `rg`
+- category: search
 
 ```text
        \\\///
@@ -356,7 +357,7 @@ I've come up with a set of rules that describe our reactions to technologies:
     (| (.)(.) |)
 .-.OOOo--()--oOOO.-.
 |                  |
-|   Power-Tool!    |
+|   Power-Tool!    | -> Demo: search in exercism folder
 |                  |
 '-.oooO------------'
    (   )   Oooo.
@@ -365,48 +366,66 @@ I've come up with a set of rules that describe our reactions to technologies:
            (_/
 ```
 
-```sh
-#rg <searchterm>
-rg /bin
-```
-
 ---
 
-# **fzf**
+# ripgrep-all
 
-- https://github.com/junegunn/fzf
+- 1.4k stars https://github.com/phiresky/ripgrep-all
 
-- interactive fuzzy search
-- `find * -type f | fzf`
-- see `locate` for a static indexer
+- ripgrep, but also search in PDFs, E-Books, Office documents, zip, tar.gz, sqlite (!), etc
+- command: `rga`
+- faster than `pdfgrep` (see website for a benchmark)
 - category: search
+- Demo: search in Manning books folder
 
 <!--
-
-    DEMO
-
-    - TODO
-
+cd ~/Dropbox/Apps/Manning\ Books/
+rga Vladimir
 -->
 
 ---
 
-# **fd**
+# fzf
 
-- https://github.com/sharkdp/fd
+- 26k stars https://github.com/junegunn/fzf
 
-- simpler alternative to `find`
-    - The command name is 50% shorter* than find :-).
-    - Convenient syntax: fd PATTERN instead of `find -iname '*PATTERN*'`.
-    - Colorized terminal output (similar to `ls`)
-    - Smart case: the search is case-insensitive by default. It switches to case-sensitive if the pattern contains an uppercase character*.
-    - Ignores hidden directories and files, by default.
-    - Ignores patterns from your `.gitignore`, by default.
-    - Regular expressions.
-    - Unicode-awareness.
+- interactive fuzzy search
+- pipe any line based input to fzf: Example `find * -type f | fzf`
+- good integration with other tools
+- nice helper methods for
+    - files & directories `cd **<TAB>`
+    - kill `kill -9 <TAB>`
+    - host names `ssh **<TAB>`
+    - environment variables & aliases `unset **<TAB>`, `export **<TAB>`, `unalias **<TAB>`
+- category: search
+- Demos:
+    - find files and select them
+    - search a text file
 
+<!--
+
+cd ~/exercism
+## `fzf -m` multiselect
+## select files with Shift+TAB
+## search for "bob"
+find * -type f | fzf -m
+
+cd .
+search for  "linux"
+cat slides.md | fzf
+-->
+
+---
+
+# fd
+
+- 11k stars https://github.com/sharkdp/fd
+
+- simple alternative to `find`
+- "The command name is 50% shorter than `find`"
+- Convenient syntax `fd PATTERN` (instead of `find -iname '*PATTERN*'`)
+- Sensible defaults: `.gitignore`, ignore hidden files/folders
 - fast
-
 - category: search
 
 <!--
@@ -417,15 +436,9 @@ rg /bin
 
 ---
 
-# Combo: ripgrep, fd & fzf
+# hyperfine
 
-TODO
-
----
-
-# **hyperfine**
-
-- https://github.com/sharkdp/hyperfine
+- 4k stars https://github.com/sharkdp/hyperfine
 
 - benchmarking tool
 
@@ -446,18 +459,18 @@ hyperfine --warmup 3 'fd '.*[0-9]\.jpg$' Documents/talks' 'find Documents/talks 
 
 ---
 
-# **progress**
+# progress
 
-- https://github.com/Xfennec/progress
+- 4k stars https://github.com/Xfennec/progress
 
 - attach to any kind of copy
 - category: monitoring
 
 ---
 
-# **Ultimate Plumber (up)**
+# Ultimate Plumber (up)
 
-- https://github.com/akavel/up
+- 4k stars https://github.com/akavel/up
 
 - interactive piping
 - instant live preview
@@ -468,9 +481,9 @@ hyperfine --warmup 3 'fd '.*[0-9]\.jpg$' Documents/talks' 'find Documents/talks 
 
 ---
 
-# **lolcat**
+# lolcat
 
-- https://github.com/busyloop/lolcat
+- 3k stars https://github.com/busyloop/lolcat
 
 - Rainbows and unicorns
 
@@ -478,7 +491,7 @@ hyperfine --warmup 3 'fd '.*[0-9]\.jpg$' Documents/talks' 'find Documents/talks 
 
 ---
 
-# **ttyd**
+# ttyd
 
 - https://tsl0922.github.io/ttyd/
 
@@ -505,9 +518,9 @@ echo -e "ttyd\nshare your terminal over the web" | boxes -d nuke -a c
 
 ---
 
-# **no-more-secrets**
+# no-more-secrets
 
-- https://github.com/bartobri/no-more-secrets
+- 4k stars https://github.com/bartobri/no-more-secrets
 
 - when the tv team comes in your office
 
@@ -515,19 +528,19 @@ echo -e "ttyd\nshare your terminal over the web" | boxes -d nuke -a c
 
 ---
 
-# **sl**
+# sl
 
-- https://github.com/mtoyoda/sl
+- 1k stars https://github.com/mtoyoda/sl
 
- typo `sl` instead of `ls` -> show steam locomotive
+- typo `sl` (instead of `ls`) -> show steam locomotive
 
 - category: fun, unix porn
 
 ---
 
-# **thefuck**
+# thefuck
 
-- https://github.com/nvbn/thefuck
+- 51k stars https://github.com/nvbn/thefuck
 
 - fix common typos / mistakes
 
@@ -535,9 +548,9 @@ echo -e "ttyd\nshare your terminal over the web" | boxes -d nuke -a c
 
 ---
 
-# **patat**
+# patat
 
-- https://github.com/jaspervdj/patat
+- 1k stars https://github.com/jaspervdj/patat
 
 - nerdy slides in your shell
 - runs in a terminal (similar to `revealJs` for the browser)
@@ -561,14 +574,25 @@ let foo = "bar";
 
 ---
 
-# **colorls**
+# ls on steroids
 
-- https://github.com/athityakumar/colorls
+`ls` problem: sort by name and time at the same time...
 
-- pimp the `ls` command
-- NerdFonts: https://github.com/ryanoasis/nerd-fonts
-- icons
+**Use colors!**
 
+- `colorls` ("the original" in ruby: https://github.com/athityakumar/colorls)
+- `lsd` (in rust: https://github.com/Peltoche/lsd)
+- `exa` (in rust: https://github.com/ogham/exa)
+
+Required: font providing all symbols
+
+- Example: NerdFonts https://github.com/ryanoasis/nerd-fonts
+
+---
+
+## colorls
+
+- 2k stars https://github.com/athityakumar/colorls
 - category: unix porn
 
 ```text
@@ -588,30 +612,30 @@ let foo = "bar";
 
 ---
 
-# **lsd**
+## lsd
 
-- https://github.com/Peltoche/lsd
-
+- 3k stars https://github.com/Peltoche/lsd
 - alternative to `colorls`
 
 ---
 
-# **pydf**
+# df alternatives
 
-- https://www.cyberciti.biz/tips/unix-linux-bsd-pydf-command-in-colours.html
+## pydf
+
+- 24 stars https://github.com/k4rtik/pydf-pypi
 
 - colorized `df` alternative
 
----
-
-# **ndcu**
+## ndcu
 
 - https://dev.yorhel.nl/ncdu
+
 - interactive `df` alternative
 
 ---
 
-# **boxes**
+# boxes
 
 - https://boxes.thomasjensen.com/docs/
 
@@ -642,7 +666,7 @@ let foo = "bar";
 - https://twitter.com/climagic
 - https://twitter.com/nixcraft
 
-# **Slides & docker examples**
+# Slides & docker examples
 
 - https://github.com/draptik/2019-12-modern-linux-command-line-tools
 

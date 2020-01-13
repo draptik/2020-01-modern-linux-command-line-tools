@@ -3,16 +3,9 @@
 name: cli-demos
 root: .
 
-#tmux_options: -f .tmux-for-demo.conf
-
 tmux_command: byobu
 
-
 windows:
-    - empty:
-        - cd ~
-        - clear
-        - echo -e "\nHallo Softwerkskammer\n" | boxes -d peek -a c
     - ranger:
         - cd ~
         - clear
@@ -29,7 +22,4 @@ windows:
     - (porn) no-more-secrets:
         - clear
         - echo -e "\nla | nms | lolcat\n" | boxes -d peek -a c
-    - christmas-tree:
-        - clear
-        - ./christmas-tree.sh
 

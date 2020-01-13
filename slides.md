@@ -466,6 +466,12 @@ hyperfine --warmup 3 'fd '.*[0-9]\.jpg$' Documents/talks' 'find Documents/talks 
 - attach to any kind of copy
 - category: monitoring
 
+- Demo:
+    - `~/tmp/demo/origin/` contains very large file
+    - tmux split screen `~/tmp/demo/`
+    - copy from `~/tmp/demo/origin/*` to `~/tmp/demo/destination/` using `cp`.
+    - `progress -w`
+
 ---
 
 # Ultimate Plumber (up)
@@ -478,6 +484,8 @@ hyperfine --warmup 3 'fd '.*[0-9]\.jpg$' Documents/talks' 'find Documents/talks 
 - interactive REPL for bash piping
 
 - category: search, file manipulation, interactive
+
+- Demo: images/up-demo.gif
 
 ---
 

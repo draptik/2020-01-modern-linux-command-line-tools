@@ -704,6 +704,12 @@ Required: font providing all symbols
 - jq
 - httpie
 - http-prompt
+- wal (color schemes for terminal) -> pywal
+- fish_config
+- apt-iselect (interactive ncurses package search for debian)
+- gcalcli (google calender in the shell)
+- pastebinit
+- MapSCII (ascii google maps in the terminal) https://github.com/rastapasta/mapscii
 
 <!--
 echo -e "did I miss your favorite tool?" | boxes -d girl -a c

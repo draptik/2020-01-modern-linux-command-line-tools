@@ -10,7 +10,7 @@ Since this is a talk for command line users,
 the presentation is run within a shell using
 [`patat`](https://github.com/jaspervdj/patat) ;-)
 
-If you just need the content: Read `slides.md`.
+If you just need the content: Read [`slides.md`](slides.md).
 
 ### Prerequisites
 

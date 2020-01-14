@@ -714,3 +714,11 @@ Required: font providing all symbols
 <!--
 echo -e "did I miss your favorite tool?" | boxes -d girl -a c
 -->
+
+---
+
+# Bonus: CLI murder mystery
+
+- 3.8k stars https://github.com/veltman/clmystery
+
+- CLI murder mystery

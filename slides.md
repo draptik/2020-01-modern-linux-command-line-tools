@@ -300,16 +300,15 @@ I've come up with a set of rules that describe our reactions to technologies:
     - kitty with image preview
     - copy `yy` & paste `pp`
 
-<!--
-    Demo
+---
 
-- navigation
-- rename
-- copy & paste
-- sorting
-- open shell
-- image preview (only in `kitty` or `urxvt` terminal)
--->
+# tldr
+
+- 25k stars https://tldr.sh/
+
+- man pages can be difficult
+- tldr: implemented in many languages (js, ruby, python, perl, haskell, etc)
+- Demo: `ln`, `tar`, `scp`
 
 ---
 

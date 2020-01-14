@@ -2,8 +2,10 @@
 START_PRESENTATION='patat slides.md'
 
 KITTY=`which kitty`
-#KITTY_CONFIG=~/.config/kitty/switch-to-solarized-light.sh
-#KITTY_CONFIG=~/.config/kitty/switch-to-github.sh
+
+## my .dotfiles are located at
+##      https://github.com/draptik/dotfiles
+##
 KITTY_CONFIG=~/.config/kitty/switch-to-tomorrow-night-bright.sh
 KITTY_MAIN_CONFIG=~/.config/kitty/kitty.large-font.conf
 

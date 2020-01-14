@@ -31,7 +31,6 @@ Optional: ...with image support (only required for 1 demo slide):
 ### Usage
 
 - start a shell
-- increase font size of the terminal (see slide "What is the difference between terminal and shell?" for maximum size)
 - `./start-slides.sh` (adopt to your setup)
 - navigate with cursor keys (or vim bindings)
 - (optional) open new browser window with all links mentioned in separate tabs in incognito mode: run `open-browser.sh`

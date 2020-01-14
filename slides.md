@@ -634,7 +634,7 @@ Required: font providing all symbols
 
 - colorized `df` alternative
 
-## ndcu
+## ncdu
 
 - https://dev.yorhel.nl/ncdu
 
@@ -675,7 +675,7 @@ Required: font providing all symbols
 
 # Slides & docker examples
 
-- https://github.com/draptik/2019-12-modern-linux-command-line-tools
+- https://github.com/draptik/2020-01-modern-linux-command-line-tools
 
 ---
 

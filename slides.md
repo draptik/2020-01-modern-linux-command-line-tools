@@ -1,6 +1,6 @@
 ---
 title: ░▒▓ modern linux command line tools ▓▒░
-author: patrick @drechsler Hackerkegeln 2020-01
+author: patrick @drechsler Hackerkegeln 2020-01 https://github.com/draptik/2020-01-modern-linux-command-line-tools
 patat:
     pandocExtensions:
         - patat_extensions

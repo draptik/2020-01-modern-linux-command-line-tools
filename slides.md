@@ -710,7 +710,7 @@ Required: font providing all symbols
 - gcalcli (google calender in the shell) 2k stars https://github.com/insanum/gcalcli
 - pastebinit (cli tool to send data to pastebin) 17 stars https://github.com/skorokithakis/pastebinit
 - MapSCII (ascii google maps in the terminal) https://github.com/rastapasta/mapscii
-- alwaysontop (always move prompt to top of screen) https://github.com/swirepe/alwaysontop
+- alwaysontop (always move prompt to top of screen) 160 stars https://github.com/swirepe/alwaysontop
 
 <!--
 echo -e "did I miss your favorite tool?" | boxes -d girl -a c

@@ -469,7 +469,13 @@ hyperfine --warmup 3 'fd '.*[0-9]\.jpg$' Documents/talks' 'find Documents/talks 
     - `~/tmp/demo/origin/` contains very large file
     - tmux split screen `~/tmp/demo/`
     - copy from `~/tmp/demo/origin/*` to `~/tmp/demo/destination/` using `cp`.
-    - `progress -w`
+    - `watch progress`
+
+```sh
+No command currently running: cp, mv, dd, tar, cat, rsync, grep, fgrep, egrep, cut, sort, md5sum,
+sha1sum, sha224sum, sha256sum, sha384sum, sha512sum, adb, gzip, gunzip, bzip2, bunzip2, xz,
+unxz, lzma, unlzma, 7z, 7za, zcat, bzcat, lzcat, split, gpg, or wrong permissions.
+```
 
 ---
 

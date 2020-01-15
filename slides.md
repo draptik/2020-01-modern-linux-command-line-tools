@@ -698,19 +698,19 @@ Required: font providing all symbols
             (__/ \__)
 ```
 
-- mosh: https://mosh.org/
-- neofetch (unix porn)
+- mosh (robust replacement for ssh) https://mosh.org/
+- neofetch (fancy system info in the shell) 7.7k stars https://github.com/dylanaraps/neofetch 
 - expect https://likegeeks.com/expect-command/
-- jq
-- httpie
-- http-prompt
-- wal (color schemes for terminal) -> pywal
-- fish_config
-- apt-iselect (interactive ncurses package search for debian)
-- gcalcli (google calender in the shell)
-- pastebinit
+- jq (sed for json) https://stedolan.github.io/jq/
+- httpie (cli http client) 45k stars https://httpie.org/
+- http-prompt (cli http client) 7.6k stars http://http-prompt.com/
+- pywal (color schemes for terminal) 3.4k stars https://github.com/dylanaraps/pywal
+- fish_config (web-based configuration tool for fish shell) https://fishshell.com/docs/current/commands.html#fish_config
+- apt-iselect (interactive ncurses package search for debian) https://www.rot13.org/~dpavlin/apt-iselect.html
+- gcalcli (google calender in the shell) 2k stars https://github.com/insanum/gcalcli
+- pastebinit (cli tool to send data to pastebin) 17 stars https://github.com/skorokithakis/pastebinit
 - MapSCII (ascii google maps in the terminal) https://github.com/rastapasta/mapscii
-- alwaysontop (https://github.com/swirepe/alwaysontop)
+- alwaysontop (always move prompt to top of screen) https://github.com/swirepe/alwaysontop
 
 <!--
 echo -e "did I miss your favorite tool?" | boxes -d girl -a c

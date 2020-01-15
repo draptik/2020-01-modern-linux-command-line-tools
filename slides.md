@@ -710,6 +710,7 @@ Required: font providing all symbols
 - gcalcli (google calender in the shell)
 - pastebinit
 - MapSCII (ascii google maps in the terminal) https://github.com/rastapasta/mapscii
+- alwaysontop (https://github.com/swirepe/alwaysontop)
 
 <!--
 echo -e "did I miss your favorite tool?" | boxes -d girl -a c

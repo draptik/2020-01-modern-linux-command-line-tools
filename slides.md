@@ -712,6 +712,7 @@ Required: font providing all symbols
 - http-prompt (cli http client) 7.6k stars http://http-prompt.com/
 - pywal (color schemes for terminal) 3.4k stars https://github.com/dylanaraps/pywal
 - fish_config (web-based configuration tool for fish shell) https://fishshell.com/docs/current/commands.html#fish_config
+- xclip (cli to X clipboard) 403 stars https://github.com/astrand/xclip
 - apt-iselect (interactive ncurses package search for debian) https://www.rot13.org/~dpavlin/apt-iselect.html
 - gcalcli (google calender in the shell) 2k stars https://github.com/insanum/gcalcli
 - pastebinit (cli tool to send data to pastebin) 17 stars https://github.com/skorokithakis/pastebinit

@@ -30,6 +30,3 @@ Within the docker container:
 
 If you want to try fancy stuff (everything having to do with fonts, emojis, icons) you will need to setup your 'consuming' terminal. This can't easily be provided by a docker container. If you know a solution: I will gladly accept pull requests ;-)
 
-# TODOs
-
-- inject sensible configs for the demo-tools
